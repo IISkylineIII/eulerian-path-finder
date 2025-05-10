@@ -17,6 +17,7 @@ Degree Calculation: Determines in-degrees and out-degrees of all nodes.
 Start Node Selection: Chooses a node with out-degree = in-degree + 1, if present.
 Path Construction: Recursively explores edges and backtracks to build the final path.
 
+```
 ### Example
 
 graph_input = {
@@ -33,6 +34,8 @@ graph_input = {
 eulerian_path = find_eulerian_path(graph_input)
 print("Eulerian Path:", " ".join(map(str, eulerian_path)))
 Output:
+
+```
 
 
 Eulerian Path: 2 1 4 5 6 1 3 4 5 9 7 8 5 6 1
