@@ -1,29 +1,24 @@
-Eulerian Path Finder
+### Eulerian Path Finder
+
 This repository provides a Python implementation for finding an Eulerian path in a directed graph using a recursive depth-first search (DFS) approach.
 
 An Eulerian path is a trail in a graph that visits every edge exactly once, possibly starting and ending at different nodes. This implementation works for directed graphs, even when nodes have unbalanced in-degrees and out-degrees, by determining the correct starting vertex.
 
-Features
+### Features
 Accepts a directed graph as an adjacency list.
-
 Automatically detects a valid starting node based on degree conditions.
-
 Uses recursive DFS to find the Eulerian path.
-
 Outputs the path in the correct sequence.
 
-Algorithm
+### Algorithm
+
 Graph Representation: Directed graph using a Python dictionary.
-
 Degree Calculation: Determines in-degrees and out-degrees of all nodes.
-
 Start Node Selection: Chooses a node with out-degree = in-degree + 1, if present.
-
 Path Construction: Recursively explores edges and backtracks to build the final path.
 
- Example
+### Example
 
-Editar
 graph_input = {
     1: [3, 4],
     2: [1],
@@ -42,13 +37,14 @@ Output:
 
 Eulerian Path: 2 1 4 5 6 1 3 4 5 9 7 8 5 6 1
 
-File Structure
-bash
+### File Structure
+
 
 eulerian-path-finder/
 ├── eulerian_path.py        # Core implementation
 └── README.md               # Project documentation
-📎 Requirements
+
+### Requirements
 Python 3.x
 
 No external dependencies
